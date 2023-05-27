@@ -1,13 +1,15 @@
 #include "digital.h"
 #include "bsp.h"
 #include "chip.h"
-
+// minuto 40 bsp
+//46 main
+// 1:06 cambios
 
 #define LED_R_PORT 2
 #define LED_R_PIN 0
 #define LED_R_FUNC SCU_MODE_FUNC4
 #define LED_R_GPIO 5
-#define LED_R_BIT 0
+#define LED_R_BIT 0 
 
 #define LED_G_PORT 2
 #define LED_G_PIN 1
