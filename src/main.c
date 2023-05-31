@@ -9,11 +9,18 @@ int main(void){
     board_t board = BoardCreate();
 
     while(true){
-        if(DigitalInputHasActivated(board->set_time)){
-            DisplayWriteBCD(board->display, (uint8_t[]){1,2,3,4},4);
+
+        //DisplayWriteBCD(board->display, (uint8_t[]){4,4,4,4},4);
+        //DisplayRefresh(board->display);
+
+
+
+        if(DigitalInputHasActivated(board->set_time) == true){
+            DisplayWriteBCD(board->display, (uint8_t[]){1,1,1,1},4);
+            DisplayRefresh(board->display);
         }
 
-        if (DigitalInputHasActivated(board->cancel)){
+        if (DigitalInputHasActivated(board->cancel) == true){
             DisplayWriteBCD(board->display, NULL, 0);
         }
 
@@ -21,19 +28,28 @@ int main(void){
     
         }
 
-        if(DigitalInputHasActivated(board->set_alarm)){
-
+        if(DigitalInputHasActivated(board->set_alarm)== true){
+            DisplayWriteBCD(board->display, (uint8_t[]){0,9,1,2},4);
+            DisplayRefresh(board->display);
         }
 
-        if(DigitalInputHasActivated(board->decrement)){
-
+        if(DigitalInputHasActivated(board->decrement)== true){
+            DisplayWriteBCD(board->display, (uint8_t[]){1,2,3,4},4);
+            DisplayRefresh(board->display);
         }
 
         if(DigitalInputHasActivated(board->increment)){
-
+            DisplayWriteBCD(board->display, (uint8_t[]){5,6,7,8},4);
+            DisplayRefresh(board->display);
         }
 
-        DisplayRefresh(board->display);
+       DisplayRefresh(board->display);
+
+        /*for (int index = 0; index < 100; index++) {
+            for (int delay = 0; delay < 5000; delay++) {
+                __asm("NOP");
+            }
+        }*/
 
 
     }

@@ -5,10 +5,10 @@
 
 
 #ifndef OUTPUT_INSTANCES
-    #define OUTPUT_INSTANCES 4
+    #define OUTPUT_INSTANCES 2
 #endif
 #ifndef INPUT_INSTANCES
-    #define INPUT_INSTANCES 4
+    #define INPUT_INSTANCES 6
 #endif
 
 
