@@ -1,8 +1,10 @@
 build/obj/src/bsp.o: \
  /home/gerardo/Facultad/Sistemas_Embebidos/MisPracticos/TP6/src/bsp.c \
  /home/gerardo/Facultad/Sistemas_Embebidos/MisPracticos/TP6/inc/digital.h \
+ /home/gerardo/Facultad/Sistemas_Embebidos/MisPracticos/TP6/inc/poncho.h \
  /home/gerardo/Facultad/Sistemas_Embebidos/MisPracticos/TP6/inc/bsp.h \
  /home/gerardo/Facultad/Sistemas_Embebidos/MisPracticos/TP6/inc/digital.h \
+ /home/gerardo/Facultad/Sistemas_Embebidos/MisPracticos/TP6/inc/pantalla.h \
  /home/gerardo/Facultad/Sistemas_Embebidos/MisPracticos/TP6/muju/external/base/soc/lpc43xx/lpc_open/inc/chip.h \
  /home/gerardo/Facultad/Sistemas_Embebidos/MisPracticos/TP6/muju/external/base/soc/lpc43xx/lpc_open/inc/config_43xx/sys_config.h \
  /home/gerardo/Facultad/Sistemas_Embebidos/MisPracticos/TP6/muju/external/base/soc/lpc43xx/lpc_open/inc/cmsis.h \

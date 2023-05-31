@@ -32,7 +32,7 @@ static display_t DisplayAllocate(void) {
 
     static struct display_s instances[1] = {0};
 
-    return intances[0];
+    return &instances[0];
 }
 
 display_t DisplayCreate(uint8_t digits, display_driver_t driver) {
